@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    padding: 20px;
+    grid-gap: 0;
+    grid-auto-flow: dense;
+    justify-content: center;
+}
+
+.box-1 {
+    width: auto;
+    height: auto;
+    grid-row: 1;
+}
+
+.box-2 {
+    width: auto;
+    height: auto;
+    grid-row: 1;
+}
+
+.box-3 {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    background-color: black;
+    color: white;
+}
+
+.box-4 {
+    grid-column: 1 / -1;
+    grid-row: 3;
+    width: 100%;
+}
+
+.box-5 {
+    grid-column: 1 / 2;
+    grid-row: 4;
+    width: 100%;
+}
+
+.box-6 {
+    grid-column: 2 / 3;
+    grid-row: 4;
+    width: 100%;;
+}
+
+.box-7 {
+    grid-row: 5;
+}
+
+.box-8 {
+    grid-row: 5;
+    width: 100%;
+}
+
+.box-9 {
+    grid-row: 5;
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+
+.box-10 {
+    grid-column: 1 / -1;
+    grid-row: 6;
+    width: 100%;
+}
+
+.box-11 {
+    grid-column: 1 / -1;
+    grid-row: 7;
+    width: 100%;
+}
+
+/* Estilos adicionais */
+.container div {
+    border: 1px solid black;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+}
